@@ -26,7 +26,7 @@ const Navbar = () => {
                         <Link className="nav-link" active={active} to={current.link}>{current.text}</Link>
                     </li>
                 )
-            })}Z
+            })}
         </ul>
     </nav>
   )
