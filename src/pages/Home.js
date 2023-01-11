@@ -1,7 +1,12 @@
+import ProjectCardContainer from "../components/ProjectCardContainer";
+
 function App() {
   return (
     <div className="Home">
-      <h1>Welcome my name is Michel. I'm a <code>software developer</code>.</h1>
+      <div className="welcome-title-container">
+        <h1 className="welcome-title ">Welcome my name is Michel. and I'm a <code>software developer</code>.</h1>
+      </div>
+      <ProjectCardContainer requestAmount ={3} />
     </div>
   );
 }

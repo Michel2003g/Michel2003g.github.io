@@ -1,1 +1,22 @@
+.Home {
+    display: flex;
+    flex-direction: column;
 
+    padding: 26px;
+    flex-grow: 1;
+}
+
+.welcome-title-container {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-grow: 1;
+}
+
+.welcome-title {
+    color: white;
+    text-align: center;
+}

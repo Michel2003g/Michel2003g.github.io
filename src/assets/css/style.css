@@ -40,6 +40,9 @@ body {
 }
 
 #page {
+    display: flex;
+    flex-direction: column;
+    
     flex-grow: 1;
 
     overflow-x: hidden;
@@ -93,15 +96,11 @@ code {
 
 .project-card {
     display: flex;
+    flex-direction: column;
 
     background-color: var(--c30);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-clip: border-box;
-    background-position: center;
-    aspect-ratio: 1.75 / 1;
 
-    box-shadow: inset 0 -75px 25px -8px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
 
     transition: all .25s;
 }
@@ -110,12 +109,55 @@ code {
     
 }
 
-.project-card > .title {
-    justify-self: left;
-    align-self: flex-end;
+.project-card > .body {
+    height: 100%;
+    padding: 8px;
+}
 
-    margin: 0 0 16px 16px;
+.project-card .tumbnail {
+    width: 100%;
+    max-height: 65%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.project-card .title {
+    margin: 0;
+
+    align-self: flex-start;
 
     font-weight: bold;
     color: white;
+}
+
+.project-card .description {
+    margin: 0;
+
+    align-self: flex-start;
+
+    color: white;
+}
+
+.project-container {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 260px;
+
+    gap: 16px;
+}
+
+.tag-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.tag {
+    margin: 0 2px 0 0;
+    padding: 1px 6px;
+    background-color: #131313;
+    text-align: center;
+
+    border-radius: 8px;
+    width: fit-content;
 }
