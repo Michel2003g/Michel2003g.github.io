@@ -32,6 +32,13 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+#root {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+}
+
 #page {
     flex-grow: 1;
 
@@ -50,6 +57,11 @@ nav {
 
     background-color: var(--c30);
 }
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
 
 .nav-list {
     display: flex;
