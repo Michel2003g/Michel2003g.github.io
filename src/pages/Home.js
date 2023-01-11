@@ -6,7 +6,7 @@ function App() {
       <div className="welcome-title-container">
         <h1 className="welcome-title ">Welcome my name is Michel. and I'm a <code>software developer</code>.</h1>
       </div>
-      <ProjectCardContainer requestAmount ={3} />
+      <ProjectCardContainer requestAmount ={4} />
     </div>
   );
 }
