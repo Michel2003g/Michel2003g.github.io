@@ -1,22 +1,37 @@
-.Home {
-    display: flex;
-    flex-direction: column;
-
-    padding: 26px;
-    flex-grow: 1;
+section {
+    min-height: 100%;
 }
 
-.welcome-title-container {
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-    align-items: center;
-
-    flex-grow: 1;
+#Home {
+    
 }
 
-.welcome-title {
+#Home > div {
+    margin: 6em 0 0 6em;
+}
+
+#Home > div > * {
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+#home-hello {
+    display: flex;
+    flex-direction: column;
+}
+
+#home-hello p{
+    margin: 0;
+    margin-bottom: 8px;
+
+    font-size: 2em;
     color: white;
-    text-align: center;
+}
+
+#project-here {
+    color: white;
+}
+
+#project-here a {
+    color: var(--c4);
 }
