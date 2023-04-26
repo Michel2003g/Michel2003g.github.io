@@ -2,7 +2,7 @@ import ProjectCardContainer from "../components/ProjectCardContainer";
 
 function App() {
   return (
-    <div>
+    <div className="container">
         <div id="home-hello">
           <p>Hello, I am <span className="bold">Michel.</span></p>
           <p>A <span className="bold">Software Developer.</span></p>
