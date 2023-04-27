@@ -86,8 +86,7 @@ const programs = [
 function App() {
   return (
     <div>
-      <p>Languages I am experianced with and my understanding level of them</p>
-      <p>Languages:</p>
+      <p className="level-section-title">Languages:</p>
       <div className="level-card-container">
         {
           languages.map((current => {
@@ -96,8 +95,7 @@ function App() {
         }
       </div>
 
-      <p>Frameworks I am experianced with and my understanding level of them</p>
-      <p>Frameworks:</p>
+      <p className="level-section-title">Frameworks:</p>
       <div className="level-card-container">
         {
           frameworks.map((current => {
@@ -106,8 +104,7 @@ function App() {
         }
       </div>
 
-      <p>Programs I am experianced with and my understanding level of them</p>
-      <p>Programs:</p>
+      <p className="level-section-title">Programs:</p>
       <div className="level-card-container">
         {
           programs.map((current => {
