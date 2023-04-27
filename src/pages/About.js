@@ -85,7 +85,7 @@ const programs = [
 
 function App() {
   return (
-    <>
+    <div>
       <p>Languages I am experianced with and my understanding level of them</p>
       <p>Languages:</p>
       <div className="level-card-container">
@@ -115,7 +115,7 @@ function App() {
           }))
         }
         </div>
-    </>
+    </div>
   );
 }
 

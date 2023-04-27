@@ -1,5 +1,5 @@
 #Home {
-    
+    min-height: 100%;
 }
 
 #Home > .container {
@@ -29,4 +29,8 @@
 
 #project-here a {
     color: var(--c4);
+}
+
+#About > div {
+    height: fit-content;
 }

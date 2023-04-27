@@ -86,7 +86,7 @@ code {
     text-decoration: none;
     color: var(--c4);
 
-    font-weight: 200;
+    font-weight: bold;
 }
 
 .nav-link[active=true] {
@@ -259,7 +259,5 @@ code {
 
   section {
     display: inline-block;
-    height: fit-content;
-    min-height: 100%;
     padding: 6em;
 }
