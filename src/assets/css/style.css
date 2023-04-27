@@ -197,7 +197,8 @@ code {
 
   .mailButton {
     text-decoration: none;
-    color: var(--white);
+    color: var(--c3);
+    font-weight: bold;
     border-radius: 6px;
     padding: 4px 8px;
     background-color: var(--c4);
@@ -209,6 +210,11 @@ code {
     border-radius: 8px;
 
     background-color: var(--c2);
+    transition: all .1s;
+  }
+
+  .level-card:hover {
+    transform: scale(1.05);
   }
 
   .level-card > .bar-holder {
@@ -268,4 +274,51 @@ code {
   color: var(--white);
   font-weight: bold;
   font-size: 1.25em;
+}
+
+.cover {
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100vh;
+  width: 100vw;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+
+  transition: opacity .25s;
+}
+
+.cover.hidden {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.modal-body {
+  background-color: var(--c2);
+  max-width: 600px;
+  min-width: 40%;
+  min-height: 5%;
+
+  display: inline-block;
+  padding: 8px;
+  transition: all .5s;
+}
+
+
+
+.cover.hidden > .modal-body {
+  transform: scale(.95);
+}
+
+.closeButton {
+  
 }
