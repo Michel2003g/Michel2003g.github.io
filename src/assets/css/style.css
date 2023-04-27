@@ -207,6 +207,7 @@ code {
   .level-card {
     padding: 16px;
 
+    border: none;
     border-radius: 8px;
 
     background-color: var(--c2);
@@ -320,5 +321,5 @@ code {
 }
 
 .closeButton {
-  
+
 }
