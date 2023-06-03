@@ -1,3 +1,5 @@
+import Link from "../components/link.jsx";
+
 class project {
     constructor(img, title, description, tags, content) {
         this.img = img;
@@ -35,6 +37,7 @@ const projects = [
             tags.react,
         ],
         <>
+            <Link url="https://michel2003g.github.io/"/>
             <p>This Portfolio is created in react and reployed using the gh-pages api.</p>
         </>
     ),
@@ -49,6 +52,7 @@ const projects = [
             tags.react,
         ],
         <>
+            <Link url="https://michel2003g.github.io/CoreModular"/>
             <p>CoreModular is a documentation site i created for modules i made on the Roblox platform. The website is created using react</p>
         </>
     ),
@@ -58,7 +62,11 @@ const projects = [
         "roblox module",
         [
             tags.lua
-        ]
+        ],
+        <>
+            <Link url="https://michel2003g.github.io/CoreModular/#/meshparticles"/>
+            <p>Meshparticles is a module that allows creators to spawn 3D particles in their world.</p>
+        </>
     ),
 ]
 

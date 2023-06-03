@@ -382,3 +382,11 @@ code {
   border-radius: 4px;
   padding: 4px 16px;
 }
+
+.link {
+  background-color: var(--c1);
+  border-radius: 8px;
+  color: var(--c4);
+  text-decoration: none;
+  padding: 4px 8px;
+}
