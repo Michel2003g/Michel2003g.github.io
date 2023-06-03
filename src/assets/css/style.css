@@ -222,6 +222,14 @@ code {
     text-align: left;
   }
 
+  .level-subtitle {
+    font-size: 1em;
+    color: var(--white);
+    font-weight: 400;
+    margin: 0;
+    text-align: left;
+  }
+
   .level {
     font-size: .8em;
     color: var(--c4);
@@ -304,11 +312,20 @@ code {
   min-height: 5%;
 
   display: inline-block;
-  padding: 8px;
+  padding: 16px;
+  border-radius: 8px;
   transition: all .5s;
 }
 
+.modal-body .closeButton {
+  background-color: var(--c1);
+  color: white;
+  font-weight: bold;
+}
 
+.modal-disc { 
+  color: white;
+}
 
 .cover.hidden > .modal-body {
   transform: scale(.95);

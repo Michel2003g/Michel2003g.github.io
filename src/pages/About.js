@@ -4,41 +4,42 @@ const languages = [
   {
     title: "Lua",
     level: 3,
-    yoe: "6+"
+    disc: "Since 2017 I mostly worked on games on Roblox Studio, Making these games teached me Lua."
   },
   {
     title: "HTML",
     level: 3,
-    yoe: 3
+    disc: "I have learned HTML in my first year on ROC Mondriaan"
   },
   {
     title: "CSS",
     level: 3,
-    yoe: 3
+    disc: "I have learned CSS in my first year on ROC Mondriaan"
   },
   {
     title: "Java Script",
     level: 3,
-    yoe: 3
+    disc: "I have learned Java Script in my first year on ROC Mondriaan"
   },
   {
     title: "C#",
     level: 2,
-    yoe: 1
+    disc: "I have learned C# in my first year on ROC Mondriaan"
   },
   {
     title: "PHP",
     level: 3,
-    yoe: 1
+    disc: "I have learned PHP in my third year on ROC Mondriaan, As a raw language but also with symfony."
   },
   {
     title: "Type Script",
-    level: 1
+    level: 1,
+    disc: "I have been into contact with Type Script. Althought haven't used it yet for projects."
   },
-  {
-    title: "C++",
-    level: 1
-  },
+  // {
+  //   title: "C++",
+  //   level: 1,
+  // },
 ]
 
 const frameworks = [
@@ -76,15 +77,18 @@ const programs = [
   },
   {
     title: "Affinity",
-    level: 3
+    level: 3,
+    subtitle: "Designer"
   },
   {
     title: "Affinity",
-    level: 1
+    level: 1,
+    subtitle: "Photo"
   },
   {
     title: "Affinity",
-    level: 2
+    level: 2,
+    subtitle: "Publisher"
   },
   
 ]
@@ -96,7 +100,7 @@ function App() {
       <div className="level-card-container">
         {
           languages.map((current => {
-            return <LevelCard title={current.title} level={current.level} yoe={current.yoe}/>
+            return <LevelCard title={current.title} level={current.level} disc={current.disc}/>
           }))
         }
       </div>
@@ -114,7 +118,7 @@ function App() {
       <div className="level-card-container">
         {
           programs.map((current => {
-            return <LevelCard title={current.title} level={current.level}/>
+            return <LevelCard title={current.title} level={current.level} subtitle={current.subtitle}/>
           }))
         }
         </div>
