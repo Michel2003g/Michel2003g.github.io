@@ -3,27 +3,33 @@ import LevelCard from '../components/LevelCard.jsx';
 const languages = [
   {
     title: "Lua",
-    level: 3
+    level: 3,
+    yoe: "6+"
   },
   {
     title: "HTML",
-    level: 3
+    level: 3,
+    yoe: 3
   },
   {
     title: "CSS",
-    level: 3
+    level: 3,
+    yoe: 3
   },
   {
     title: "Java Script",
-    level: 3
+    level: 3,
+    yoe: 3
   },
   {
     title: "C#",
-    level: 2
+    level: 2,
+    yoe: 1
   },
   {
     title: "PHP",
-    level: 3
+    level: 3,
+    yoe: 1
   },
   {
     title: "Type Script",
@@ -90,7 +96,7 @@ function App() {
       <div className="level-card-container">
         {
           languages.map((current => {
-            return <LevelCard title={current.title} level={current.level}/>
+            return <LevelCard title={current.title} level={current.level} yoe={current.yoe}/>
           }))
         }
       </div>

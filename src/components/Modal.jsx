@@ -6,9 +6,9 @@ const Modal = ({children, openModal, buttons}) => {
       }>
         <div className="modal-body">
           {children}
-        </div>
-        <div className="button-container">
-          {buttons}
+          <div className="button-container">
+            {buttons}
+          </div>
         </div>
       </div>
     )

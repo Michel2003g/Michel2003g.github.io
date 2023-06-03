@@ -106,10 +106,6 @@ code {
     transition: all .25s;
 }
 
-.project-card:hover {
-    
-}
-
 .project-card > .body {
     height: 100%;
     padding: 8px;
@@ -218,22 +214,20 @@ code {
     transform: scale(1.05);
   }
 
-  .level-card > .bar-holder {
-    margin: 8px 0 !important;
-  }
-
-  .level-card > .title {
+  .level-title {
     font-size: 1.25em;
     color: var(--white);
     font-weight: bold;
     margin: 0;
+    text-align: left;
   }
 
-  .level-card > .level {
+  .level {
     font-size: .8em;
     color: var(--c4);
     font-weight: 600;
     margin: 0;
+    text-align: left;
   }
 
   .bar-holder {
@@ -243,7 +237,7 @@ code {
 
     width: calc(100% - 8px);
     height: 8px;
-    margin: 0;
+    margin: 8px 0;
 
     background-color: var(--c3);
   }
@@ -320,6 +314,14 @@ code {
   transform: scale(.95);
 }
 
-.closeButton {
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
+.button-container > * {
+  border: none;
+  border-radius: 4px;
+  padding: 4px 16px;
 }
