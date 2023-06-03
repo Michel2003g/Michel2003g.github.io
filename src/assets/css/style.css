@@ -317,6 +317,18 @@ code {
   transition: all .5s;
 }
 
+.modal-body.project {
+  background-color: var(--c2);
+  max-width: 800px;
+  min-width: 60%;
+  min-height: 1%;
+
+  display: inline-block;
+  padding: 16px;
+  border-radius: 8px;
+  transition: all .5s;
+}
+
 .modal-body .closeButton {
   background-color: var(--c1);
   color: white;

@@ -1,10 +1,14 @@
-const Modal = ({children, openModal, buttons}) => {
+const Modal = ({children, openModal, buttons, type}) => {
+
+    if (type === undefined) {
+      type = ""
+    }
 
     return (
       <div className={
         "cover " + (openModal ? '' : 'hidden')
       }>
-        <div className="modal-body">
+        <div className={"modal-body " + type}>
           {children}
           <div className="button-container">
             {buttons}
