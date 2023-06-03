@@ -20,7 +20,16 @@ const ProjectCard = ({data}) => {
         </div>
       </button>
       <Modal openModal={openModal} buttons={<button className="closeButton" onClick={() => setModal(false)}>Close</button>} type="project">
-
+        <div className='project-image-container'>
+          <div className='project-image' style={{backgroundImage: 'url('+data.img+')'}}></div>
+        </div>
+        <p className="title">{data.title}</p>
+        <div className="tag-container">
+              {data.tags.map(tag => {
+                  return <p className="tag" style={{color: tag.color}}>{tag.text}</p>
+              })}
+          </div>
+        <p>{data.content}</p>
       </Modal>
     </>
   )

@@ -1,9 +1,10 @@
 class project {
-    constructor(img, title, description, tags) {
+    constructor(img, title, description, tags, content) {
         this.img = img;
         this.title = title;
         this.description = description;
         this.tags = tags;
+        this.content = content;
     }
 }
 
@@ -32,7 +33,10 @@ const projects = [
             tags.js,
             tags.css,
             tags.react,
-        ]
+        ],
+        <>
+            <p>This Portfolio is created in react and reployed using the gh-pages api.</p>
+        </>
     ),
     new project(
         "https://batdongsantoanquoc.net/no-image.png",
@@ -43,7 +47,10 @@ const projects = [
             tags.js,
             tags.css,
             tags.react,
-        ]
+        ],
+        <>
+            <p>CoreModular is a documentation site i created for modules i made on the Roblox platform. The website is created using react</p>
+        </>
     ),
     new project(
         "https://batdongsantoanquoc.net/no-image.png",

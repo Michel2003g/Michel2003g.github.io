@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 
 import './assets/css/style.css';
 import './assets/css/index.css';
+import './assets/css/projectModal.css';
 
 function App() {
   return (
