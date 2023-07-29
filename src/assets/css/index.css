@@ -15,16 +15,29 @@
     flex-direction: column;
 }
 
-#home-hello p{
+#home-hello > div {
+    display: flex;
+}
+
+#home-hello > div > * {
     margin: 0;
     margin-bottom: 8px;
 
     font-size: 2em;
-    color: white;
+    color: var(--white);
+}
+
+#home-hello > div > p {
+    margin-right: 8px;
 }
 
 #project-here {
-    color: white;
+    color: var(--white);
+}
+
+#project-here p {
+    font-weight: 600;
+    margin: 0 6px 0 0;
 }
 
 #project-here a {

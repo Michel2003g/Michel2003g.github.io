@@ -4,10 +4,19 @@ function App() {
   return (
     <div className="container">
         <div id="home-hello">
-          <p>Hello, I am <span className="bold">Michel.</span></p>
-          <p>A <span className="bold">Software Developer.</span></p>
+         <div>
+          <p>Hello, I am</p>
+          <span className="bold title-bold">Michel.</span>
+         </div>
+          <div>
+            <p>A</p>
+            <span className="bold title-bold">Software Developer.</span>
+          </div>
         </div>
-        <p id="project-here">You can find some of my work <a href="#Projects">here.</a></p>
+        <div className="flex-right" id="project-here">
+          <p>You can find some of my work</p>
+          <a href="#Projects">here.</a>
+        </div>
         <a className="mailButton" href="mailto:nomailyet@gmail.com">nomailyet@gmail.com</a>
     </div>
   );
