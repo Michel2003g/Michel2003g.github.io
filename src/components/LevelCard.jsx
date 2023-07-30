@@ -26,12 +26,12 @@ const LevelCard = ({title, level, disc, subtitle}) => {
           <p className="level">{levels[level-1]}</p>
         </button>
         <Modal openModal={openModal} buttons={<button className="closeButton" onClick={() => setModal(false)}>Close</button>}>
-          <p className="level-title">{title} <span className='level-subtitle'>{subtitle}</span></p>
+          <p className="level-title white">{title} <span className='level-subtitle'>{subtitle}</span></p>
           <div className="bar-holder">
               <div className="bar" style={{width: + (level * 20) + "%"}}></div>
           </div>
-          <p className="level">{levels[level-1]}</p>
-          <p className='modal-disc'>{disc}</p>
+          <p className="level white">{levels[level-1]}</p>
+          <p className='modal-disc white'>{disc}</p>
         </Modal>
       </>
 

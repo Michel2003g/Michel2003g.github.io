@@ -3,9 +3,11 @@
 
 :root[data-theme="light"] {
     --c1: #f9f9f9;
-    --c2: #a7a7a7;
-    --c3: #686868;
-    --c4: #23abff;
+    --c2: #e4e4e4;
+    --c3: #3e3e3e;
+    --c4: #00ff9d;
+
+    --shadow: rgba(0, 0, 0, 0.5);
 
     --white: rgb(63, 63, 63);
 }
@@ -15,6 +17,8 @@
   --c2: #2c2c2c;
   --c3: #101010;
   --c4: #3BFC88;
+
+  --shadow: rgba(0, 0, 0, 0.5);
 
   --white: rgb(255, 255, 255);
 }
@@ -228,6 +232,7 @@ code {
   }
 
   .level-card {
+    
     padding: 16px;
 
     border: none;
@@ -235,6 +240,8 @@ code {
 
     background-color: var(--c2);
     transition: all .1s;
+
+    box-shadow: 0 0 8px 2px var(--shadow);
   }
 
   .level-card:hover {

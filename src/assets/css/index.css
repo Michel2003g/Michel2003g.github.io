@@ -47,3 +47,7 @@
 #About > div {
     height: fit-content;
 }
+
+.white {
+    color: var(--white);
+}
